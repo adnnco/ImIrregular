@@ -14,9 +14,9 @@
     @vite('resources/css/app.css')
 </head>
 <body class="antialiased text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900">
-<div id="app">
+<div id="wrapper" class=" mx-auto">
     <header id="header">
-        <div class="container mx-auto">
+        <div class="container mx-auto px-4">
             <div class="flex justify-center items-center py-20 font-header">
                 <a href="{{ route('home') }}">
                     <h1 class="text-5xl font-bold text-amber-400">ImIrregular</h1>
@@ -24,10 +24,11 @@
             </div>
         </div>
     </header>
-    <div id="main" class="container mx-auto max-w-screen-md">
-        <livewire:search/>
+    <div id="main">
+        <div class="container mx-auto px-4">
+            <livewire:search/>
+        </div>
     </div>
-
 </div>
 <!-- Scripts -->
 @vite('resources/js/app.js')
